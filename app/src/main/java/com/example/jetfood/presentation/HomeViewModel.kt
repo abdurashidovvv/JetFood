@@ -22,7 +22,7 @@ class HomeViewModel(
         getAllFood()
     }
 
-    private fun getAllFood() {
+    fun getAllFood() {
         viewModelScope.launch {
             repository.getAllFoods().collectLatest {
                 delay(1000)

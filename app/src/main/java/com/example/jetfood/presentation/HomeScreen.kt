@@ -17,6 +17,8 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import com.example.jetfood.R
+import com.example.jetfood.presentation.component.ShowError
+import com.example.jetfood.presentation.component.ShowLoading
 import com.example.jetfood.utils.Result
 
 @Composable
@@ -49,10 +51,20 @@ fun HomeScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            when(val res = result){
-                is Result.Failure -> {}
-                Result.Loading -> {}
-                is Result.Success -> {}
+            when (val res = result) {
+                is Result.Failure -> {
+                    ShowError(message = res.error.message ?: "Error") {
+                        viewModel.getAllFood()
+                    }
+                }
+
+                Result.Loading -> {
+                    ShowLoading()
+                }
+
+                is Result.Success -> {
+
+                }
             }
         }
     }
