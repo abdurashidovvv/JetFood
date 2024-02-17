@@ -66,6 +66,14 @@ dependencies {
 
     implementation 'com.jakewharton.timber:timber:5.0.1'
 
+    //material
+    implementation "androidx.compose.material:material-icons-core:$compose_version"
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha04"
+    implementation "androidx.navigation:navigation-compose:1.0.0-alpha09"
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.0-alpha05"
+    implementation "androidx.compose.material:material:$compose_version"
+
 
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
