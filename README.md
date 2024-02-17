@@ -2,7 +2,7 @@
 
 JetFood is a fantastic project that revolutionizes the way we experience food. Explore the world of flavors with JetFood!
 
-![JetFood](https://github.com/abdurashidovvv/JetFood/assets/105719873/2951f9b8-0236-4ed8-98e5-4f0109f98337)
+![JetFood Image 1](https://github.com/abdurashidovvv/JetFood/assets/105719873/47bd4178-fbb2-4eab-9e08-3c1175836b4c) ![JetFood Image 2](https://github.com/abdurashidovvv/JetFood/assets/105719873/caaabb73-d267-4bea-8fea-6d57f14d3f5c)
 
 ## Features
 
