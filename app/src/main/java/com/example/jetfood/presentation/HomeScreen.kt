@@ -63,7 +63,7 @@ fun HomeScreen(
                 }
 
                 is Result.Success -> {
-
+                    DashBoard(data = res.data?: emptyList())
                 }
             }
         }

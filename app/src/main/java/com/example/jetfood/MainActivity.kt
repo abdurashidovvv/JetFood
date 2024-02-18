@@ -10,7 +10,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetfood.presentation.HomeScreen
+import com.example.jetfood.presentation.HomeViewModel
 import com.example.jetfood.presentation.theme.JetFoodTheme
+import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +24,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    val viewModel = getViewModel<HomeViewModel>()
+                    HomeScreen(viewModel = viewModel)
                 }
             }
         }
